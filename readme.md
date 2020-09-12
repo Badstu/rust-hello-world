@@ -32,6 +32,7 @@ touch launch.json task.json
 ```
 
 **launch.json**
+> **Attention!!!** please replace your `miDebuggerPath` in `(gdb) Launch` with your real gdb path.
 ```json
 { 
     "version": "0.2.0", 
