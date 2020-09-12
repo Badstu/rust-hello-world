@@ -37,25 +37,25 @@ touch launch.json task.json
 { 
     "version": "0.2.0", 
     "configurations": [ 
-        {
-            "name": "(Windows) Launch",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "program": "cmd",
-            "args": [
-                "/C",
-                "${workspaceFolder}/target/debug/${workspaceFolderBasename}.exe",
-                "&",
-                "pause"
-            ],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole":true,
-            
-            "preLaunchTask": "build"
-        },
-        { 
+		{
+			"name": "(Windows) Launch",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "cmd",
+			"args": [
+				"/C",
+				"${workspaceFolder}/target/debug/${workspaceFolderBasename}.exe",
+				"&",
+				"pause"
+			],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole":true,
+			
+			"preLaunchTask": "build"
+		},
+		{ 
             "name": "(gdb) Launch", 
             "type": "cppdbg", 
             "request": "launch", 
@@ -74,7 +74,7 @@ touch launch.json task.json
                     "ignoreFailures": true 
                 } 
             ],
-            "preLaunchTask": "build"
+			"preLaunchTask": "build"
         } 
     ] 
 }
